@@ -34,6 +34,10 @@
         <h3>Productivity puzzle</h3>
         <p>My second chart looks at productivity in the UK</p>
         <div class="chart" id="Chart2"> </div>
+        
+        <h4>IMF Outstanding Credit</h4>
+        <p>This third charts looks at all the outstanding creding of the International Monetary Fund throughout the years</p>
+        <div class="chart" id="Chart3"> </div>
     </div> 
 </body>
 
@@ -42,10 +46,11 @@
     //Define charts:
     var myChart1 = "agingPopulation.json";
     var myChart2 = "decliningPopulation.json";
-
+    var myChart3 = "IMF_OutstandingCredit.json";
     // Embed charts:
     vegaEmbed('#Chart1', myChart1);
     vegaEmbed('#Chart2', myChart2);
+    vegaEmbed('#Chart3', myChart3);
 </script>
 
 </html>
