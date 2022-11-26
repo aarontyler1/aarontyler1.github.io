@@ -1,67 +1,4 @@
-{
-    "description": {
-        "cdid": "KI2V",
-        "contact": {
-            "email": "Financial.Inquiries@ons.gov.uk",
-            "name": "Fred Norris",
-            "telephone": "+44 (0)1633 456109"
-        },
-        "datasetId": "MQ5",
-        "datasetUri": "/economy/investmentspensionsandtrusts/datasets/investmentbyinsurancecompaniespensionfundsandtrusts",
-        "date": "2017",
-        "nextRelease": "This release is being discontinued",
-        "number": "4444365",
-        "preUnit": "£",
-        "releaseDate": "2019-03-21T00:00:00.000Z",
-        "sampleSize": "0",
-        "source": "",
-        "title": "Asset holdings (at market value) by UK financial institutions",
-        "unit": "million"
-    },
-    "months": [],
-    "quarters": [],
-    "relatedData": [],
-    "relatedDatasets": [
-        {
-            "uri": "/economy/investmentspensionsandtrusts/datasets/investmentbyinsurancecompaniespensionfundsandtrusts"
-        }
-    ],
-    "relatedDocuments": [
-        {
-            "uri": "/economy/investmentspensionsandtrusts/bulletins/mq5investmentbyinsurancecompaniespensionfundsandtrusts/latest"
-        }
-    ],
-    "section": {},
-    "sourceDatasets": [],
-    "type": "timeseries",
-    "uri": "/economy/investmentspensionsandtrusts/timeseries/ki2v/mq5",
-    "versions": [
-        {
-            "correctionNotice": "",
-            "label": "v1",
-            "updateDate": "2015-09-16T23:00:00.000Z",
-            "uri": "/economy/investmentspensionsandtrusts/timeseries/ki2v/mq5/previous/v1"
-        },
-        {
-            "correctionNotice": "",
-            "label": "v2",
-            "updateDate": "2016-12-15T09:30:00.000Z",
-            "uri": "/economy/investmentspensionsandtrusts/timeseries/ki2v/mq5/previous/v2"
-        },
-        {
-            "correctionNotice": "",
-            "label": "v3",
-            "updateDate": "2017-12-14T09:30:00.000Z",
-            "uri": "/economy/investmentspensionsandtrusts/timeseries/ki2v/mq5/previous/v3"
-        },
-        {
-            "correctionNotice": "",
-            "label": "v4",
-            "updateDate": "2018-12-13T09:30:00.000Z",
-            "uri": "/economy/investmentspensionsandtrusts/timeseries/ki2v/mq5/previous/v4"
-        }
-    ],
-    "years": [
+ [
         {
             "date": "1986",
             "label": "1986",
@@ -383,4 +320,3 @@
             "year": "2017"
         }
     ]
-}
