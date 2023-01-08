@@ -1,0 +1,83 @@
+{"title": {
+    "text": "London Knife Crime & Population Density",
+    "subtitle":["Regressing the Population Density on the Knife crime seen", "in London Boroughs."],
+    "subtitleFontStyle":"italic",
+    "subtitleFontSize":10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/aarontyler1/aarontyler1.github.io/main/PopDensity%20and%20Knife%20Crime.csv"
+  },
+   
+  "height": 300,
+  "width": 300,
+
+  "layer": [
+    {
+      "mark": {
+        "type": "circle",
+        "filled": true,
+        "size":100},
+    
+      "encoding": {
+        "x": {
+          "field": "Population density (Per Square Kilometre)",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "Knife Crime 2021",
+          "type": "quantitative"},
+
+
+          "tooltip":[
+        {"field":"Borough", "type": "ordinal", "title":"Country"},
+        {"field":"Knife Crime 2021", "type": "quantitative", "title":"CCPI Rank"},
+      ]
+      }
+    },
+    {
+      "mark": {
+        "type": "line",
+        "color": "firebrick"
+      },
+      "transform": [
+        {
+          "regression": "Knife Crime 2021",
+          "on": "Population density (Per Square Kilometre)"
+        }
+      ],
+      "encoding": {
+        "x": {
+          "field": "Population density (Per Square Kilometre)",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "Knife Crime 2021",
+          "type": "quantitative"
+        },
+      }
+    },
+    {
+      "transform": [
+        {
+          "regression": "Knife Crime 2021",
+          "on": "Population density (Per Square Kilometre)",
+          "params": true
+        },
+        {"calculate": "'R²: '+format(datum.rSquared, '.2f')", "as": "R2"}
+      ],
+      "mark": {
+        "type": "text",
+        "color": "firebrick",
+        "x": "width",
+        "align": "right",
+        "y": -5
+      },
+      "encoding": {
+        "text": {"type": "nominal", "field": "R2"}
+      }
+    }
+  ],
+ 
+}

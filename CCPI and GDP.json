@@ -1,0 +1,61 @@
+{ "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+    "title": {
+      "text": "The Relationship of Climate Performance on GDP Growth",
+      "subtitle":["Using the CCPI to determine if a good economic performance will be ","detrimental to economic growth (Real GDP)", ""],
+      "subtitleFontStyle":"italic",
+      "subtitleFontSize":10,
+      "anchor": "start",
+      "color": "black"
+    },
+
+  "config": {
+    "background":"white",
+    "view": {
+      "stroke": "transparent"}},
+  
+    "data": {
+      "url": "https://raw.githubusercontent.com/aarontyler1/aarontyler1.github.io/main/Climate%20Change%20%26%20Growth.csv",
+      "format":{"type":"csv"}},
+
+
+  
+    "mark": {
+      "type":"circle",
+      "color":"green",
+      "opacity":0.7,
+      "size":90},
+      
+    
+    "height": 300,
+    "width": 300,
+  
+
+         "transform": [
+
+      {"calculate": "datum.GDP_Growth_Rate/100", "as": "value"}
+    ],
+
+    "encoding": {
+      "x": {
+        "field": "CCPI", 
+        "type": "quantitative",
+        "scale": {"domain": [0, 90]},
+        "axis":{"grid": false},
+        "title":"Climate Change Performance Index"},
+  
+      "y": {
+        "field": "value", 
+        "type": "quantitative",
+        "scale": {"domain": [-0.075, 0.1]},
+        "axis":{"format":"%"},
+        "title":"Real GDP Growth Rate"},
+  
+   
+
+      "tooltip":[
+        {"field":"Country", "type": "ordinal", "title":"Country"},
+        {"field":"Climate Rank", "type": "quantitative", "title":"CCPI Rank"},
+      ]
+     }
+  }
