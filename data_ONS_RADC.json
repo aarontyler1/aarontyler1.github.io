@@ -1,0 +1,20 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "Google's stock price over time.",
+    "data": {"url": "https://raw.githubusercontent.com/aarontyler1/aarontyler1.github.io/main/data_ONS-RADC%20(1).json",
+    "format": {"type":"json", "property": "quarters"}
+    
+    
+    },
+    "title":"Insurance Sector - Assets Acquired",
+  
+    "mark": "line",
+    "encoding": {
+      "x": {"field": "year", "type": "temporal", "title":"(Includes: Public Corporation secs,loans & mortgages)","axis": {
+              "titleOpacity":0.5
+            }},
+      "y": {"field": "value", "type": "quantitative", "title":"Value (Millions)", "scale":{"domain":[-1000,1000]}}
+      
+      
+    }
+  }

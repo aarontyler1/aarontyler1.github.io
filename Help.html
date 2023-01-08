@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Title for the page -->
+    <title>Document</title>
+
+    <!-- Link to my style sheet -->
+    <link rel="stylesheet" href="index2.css">
+
+    <!--The next three lines allow the Vega embed-->
+    <script src="https://cdn.jsdelivr.net/npm/vega@5.17.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@4.17.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.12.2"></script>
+</head>
+
+
+
+<body>
+    <!-- A div that contains a group of items for week 1. Can be useful for setting background colours etc.  -->
+    <div class="myWeek1">
+        <h1>Data Science for Economists.</h1>
+        
+        <h3>Covid-19</h3>
+        <p>The first chart tracks Covid-19 cases by UK region.</p>
+        <div class="chart" id="Chart1"></div>
+
+        <h3>Productivity puzzle</h3>
+        <p>My second chart looks at productivity in the UK</p>
+        <div class="chart" id="Chart2"> </div>
+
+        <h4>IMF Outstanding Credit</h4>
+        <p>This third charts looks at all the outstanding creding of the International Monetary Fund throughout the years</p>
+        <div class="chart" id="Chart3"> </div>
+
+        
+        <h5>Divorces in England and Wales</h5>
+        <p>This fourth chart shows the shows the number of divorces that have occured for all couple types within England and Wales</p>
+        <div class="chart" id="Chart4"> </div>
+
+        <h6>The Relationship between Chess player's yearly rankings</h6>
+        <p>This fifth chart shows how players rankings last year correlate to the success they have had in their Elo ratings in the current season</p>
+        <div class="chart" id="Chart5"> </div>
+
+      
+
+        <table>
+            <tr>
+              <td class="chart" id="Chart6">Company</td>
+              <td class="chart" id="Chart7">Company</td>
+              <td class="chart" id="Chart8">Company</td>
+            </tr>
+            <tr>
+              <td class="chart" id="Chart9">Company</td>
+              <td class="chart" id="Chart10">Company</td>
+              <td class="chart" id="Chart11">Company</td>
+            </tr>
+            <tr>
+              <td class="chart" id="Chart12">Company</td>
+              <td class="chart" id="Chart13">Company</td>
+              <td class="chart" id="Chart14">Company</td>
+            </tr>
+          </table>
+    
+
+        </div>
+    </div> 
+</body>
+
+<!-- All we need to do is change the file names to other file names of stuff we are interested in, and then create the vega embedd
+and we will get these charts from the rdeconomist.github.io/rapid charts website to get these charts to add. THIS IS HOMEWORK
+There are hundreds of charts in the repository save these to our own repository and then point to them in your code. -->
+
+<script>
+   //Define charts:
+   var myChart1 = "CostLiving_Crisis.json";
+    var myChart2 = "decliningPopulation.json";
+    var myChart3 = "IMF_OutstandingCredit.json";
+    var myChart4 = "Divorces_EnglandWales.json";
+    var myChart5 = "Chess_Rankings.json";
+    var myChart6 = "data_ONS_KI2V.json";
+    var myChart7 = "data_ONS_RADC.json";
+    var myChart8 = "data_ONS_RLJR.json";
+    var myChart9 = "data_ONS_RLJT.json";
+    var myChart10 = "data_ONS_RLJX.json";
+    var myChart11 = "data_ONS_RLKE.json";
+    var myChart12 = "data_ONS_RLKG.json";
+    var myChart13 = "data_ONS_RLKH.json";
+    var myChart14 = "data_ONS_RLKJ.json";
+
+    // Embed charts:
+    vegaEmbed('#Chart1', myChart1);
+    vegaEmbed('#Chart2', myChart2);
+    vegaEmbed('#Chart3', myChart3);
+    vegaEmbed('#Chart4', myChart4);
+    vegaEmbed('#Chart5', myChart5);
+    vegaEmbed('#Chart6', myChart6);
+    vegaEmbed('#Chart7', myChart7);
+    vegaEmbed('#Chart8', myChart8);
+    vegaEmbed('#Chart9', myChart9);
+    vegaEmbed('#Chart10', myChart10);
+    vegaEmbed('#Chart11', myChart11);
+    vegaEmbed('#Chart12', myChart12);
+    vegaEmbed('#Chart13', myChart13);
+    vegaEmbed('#Chart14', myChart14);
+    
+</script>
+
+</html>
+
+

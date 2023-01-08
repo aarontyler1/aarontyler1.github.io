@@ -1,0 +1,46 @@
+
+  {"$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  
+  
+  "data": {
+    "url": "https://raw.githubusercontent.com/aarontyler1/aarontyler1.github.io/main/Chess%20Rankings.csv",
+    "format": {"type": "csv"}
+  },
+
+  "title": {
+    "text": "Aging populations",
+    "subtitle":"Share of popluation that is ages 65+. Source: UN. S Korea=blue",
+    "subtitleFontStyle":"italic",
+    "subtitleFontSize":10,
+    "anchor": "start",
+    "color": "black"
+  },
+
+  "height": 300,
+  "width": 300,
+  
+  "mark": {"type": "point", "width":10},
+
+    "encoding": {
+  "x": {
+    "field": "Current Rating", "title": "Current Elo Rating",
+    "type": "quantitative",
+    "scale": {"zero": false}
+  },
+  "y": {
+    "field": "Ranking Last Year",
+    "type": "quantitative",
+    "scale": {"zero": false}},
+
+
+     "color": {
+      "field": "Name", "type": "nominal",
+     "legend": null     
+     }
+  
+    
+      
+
+    
+  
+    }}
