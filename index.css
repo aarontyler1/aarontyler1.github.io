@@ -524,3 +524,78 @@ h3{
     transform: translate3d(39vw, 74vh, 55px);
     background: #d926d9;
 }
+
+
+#loader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    width: 120px;
+    height: 120px;}
+  
+  #L1 {
+    position: absolute;
+    border-radius: 50%;
+    background: #FFFFFF;
+    opacity: .0;
+    animation: loading 1.4s .65s infinite;
+    height: 20px;
+    width: 20px;}
+  
+  #L2 {
+    position: absolute;
+    border-radius: 50%;
+    background: #ff0000;
+    opacity: .0;
+    animation: loading 1.4s infinite;
+    height: 20px;
+    width: 20px;}
+  
+  
+  @keyframes loading {
+    0% {
+      opacity: .0;
+      transform: scale(.15);
+      box-shadow: 0 0 2px rgba(black, .1);}
+    50% {
+      opacity: 1;
+      transform: scale(2);
+      box-shadow: 0 0 10px rgba(black, .1);}
+    100% {
+      opacity: .0;
+      transform: scale(.15);
+        box-shadow: 0 0 2px rgba(black, .1);}}
+  
+  #myDiv {
+    display: none;
+    text-align: center;}
+
+  #loadermessage {
+    position: absolute;
+    text-align: center !important;
+    top: 60% !important;
+    left: 46%;
+    z-index: 1;
+    width: 120px;
+    height: 120px;
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+    color: rgb(3, 2, 0);
+    font-size: 20px; 
+    letter-spacing: 1px; 
+    line-height: 1; }
+  
+@media only screen and (max-width: 800px) {
+  .chart {
+  width: 400px;
+  overflow:scroll;}
+  #loadermessage {
+    left:40% !important;}
+    
+    body {
+    max-width: 100%;
+    margin-left: 0px !important;}
+    
+    ::-webkit-scrollbar {
+      height: 5px !important;}}
