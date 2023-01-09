@@ -46,7 +46,39 @@
 <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.12.2"></script>
 
 </head>
+
+<div id="loader">
+    <div id="L1"></div>
+    <div id="L2"></div>
+  </div>
+  
+  <!--------------------------------------    Loading Page Messages ------------------------------------------------------------------->
+  <div id="loadermessage">Slowly getting there....</div></head>
+  <body onload="myFunction()" style="margin:0;">
+  <div id="loader"></div>
+  
+  
+  <div style="display:none;" id="myDiv" class="animate-bottom"> <script>
+      var myVar;
+      function myFunction() 
+      {myVar = setTimeout(showPage, 3000);}
+      function showPage() {document.getElementById("loader").style.display = "none";
+        document.getElementById("loadermessage").style.display = "none";
+        document.getElementById("myDiv").style.display = "block";}
+      </script>
+
+
 <body>
+
+ 
+
+
+
+
+
+
+
+
     <title>Aaron Tyler Home Page</title> 
 <br>
 <br> 
