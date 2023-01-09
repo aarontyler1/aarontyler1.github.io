@@ -1,0 +1,59 @@
+{ "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+    "title": {
+      "text": "The Relationship of Deprivation and Crime.",
+      "subtitle":["Using the IMD index for multiple deprivation and comparing it to London","Boroughs and their crime rates", ""],
+      "subtitleFontStyle":"italic",
+      "subtitleFontSize":10,
+      "anchor": "start",
+      "color": "black"
+    },
+
+  "config": {
+    "background":"white",
+    "view": {
+      "stroke": "transparent"}},
+  
+    "data": {
+      "url": "https://raw.githubusercontent.com/aarontyler1/aarontyler1.github.io/main/Boroughknifecrime.csv",
+      "format":{"type":"csv"}},
+  
+    "mark": {
+      "type":"circle",
+      "color":"Blue",
+      "opacity":0.7},
+    
+    "height": 300,
+    "width": 300,
+  
+    "encoding": {
+      "x": {
+        "field": "IMD Borough Rankings", 
+        "type": "quantitative",
+        "scale": {"domain": [0, 35]},
+        "axis":{"grid": false},
+        "title":"Ranking (Index of Multiple Deprivations)"},
+  
+      "y": {
+        "field": "2021 Crime count", 
+        "type": "quantitative",
+        "scale": {"domain": [5000, 50000]},
+        "axis":{"grid": false},
+        "title":"2021 Crime Count (Boroughs)"},
+  
+      "size": {
+        "field": "Population 2021", 
+        "type": "quantitative",
+        "title":"Prison Rate",
+        "scale": { "range": [10, 800]},
+        "legend":null},
+
+      "tooltip":[
+        {"field":"Borough", "type": "ordinal", "title":"Borough"},
+        {"field":"2021 Offences per 1,000", "type": "quantitative", "title":"Offences/1000 People"},
+        {"field":"IMD Borough Rankings", "type": "quantitative", "title":"Deprivation Rank"},
+        {"field":"Population 2021", "type": "quantitative", "title":"Population", "format":","}
+
+      ]
+     }
+  }

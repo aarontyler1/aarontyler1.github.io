@@ -8,8 +8,8 @@
   },
 
   "title": {
-    "text": "Chess Overall Elo Rankings",
-    "subtitle":"A Breakdown of the performance of Professional Chess Players between seasons",
+    "text": "Aging populations",
+    "subtitle":"Share of popluation that is ages 65+. Source: UN. S Korea=blue",
     "subtitleFontStyle":"italic",
     "subtitleFontSize":10,
     "anchor": "start",

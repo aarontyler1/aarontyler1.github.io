@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nataly Tsangarides</title>
-
+    
+    <script src="https://kit.fontawesome.com/2fbbc375cc.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href= "Skills.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
  <!--Internet Tab Image-->
-    <link rel="icon" href="icon.png">
-
+    <link rel="icon" href="computer-11053.png">
+    <title>Aaron Tyler</title>
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
       body {margin: 0;text-align: center !important;}   
@@ -21,6 +21,7 @@
 <script src="https://cdn.jsdelivr.net/npm/vega@5.17.0"></script>
 <script src="https://cdn.jsdelivr.net/npm/vega-lite@4.17.0"></script>
 <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.12.2"></script>
+
     
 </head>
 
@@ -39,9 +40,7 @@
     var myVar;
     function myFunction() 
     {myVar = setTimeout(showPage, 3000);}
-  
-    function showPage() {
-      document.getElementById("loader").style.display = "none";
+    function showPage() {document.getElementById("loader").style.display = "none";
       document.getElementById("loadermessage").style.display = "none";
       document.getElementById("myDiv").style.display = "block";}
     </script>
@@ -54,16 +53,16 @@
 <!----------TitleBar Container-------->
 <container><container class="hcontainer">
 <h1>Data<span style="color:rgb(255, 0, 0)">Science</span> Portfolio</h1></span>
-<h2><b>Created by Aaron Tyler</b> </h2>
+
 
 <!----------------------------------------------------- Interactive Buttons ---------------------------------------------------------->
 
   <p>
-    <a class="button" href="index.html"><i class="fas fa-home faa-home animated-hover fa-4x" style="font-size: 1em;"></i> Home</a>  
-    <a class="buttonActive" href="portfolio.html"><i class="fas fa-chart-bar"></i> Portfolio</a>
-    <a class="button" href="project.html"><i class="fas fa-edit faa-edit animated-hover fa-4x" style="font-size: 1em;"></i> Project</a> 
-    <a class="button" href="https://github.com/NatalyTsangarides/NatalyTsangarides.github.io"><i class="fab fa-github faa-github animated-hover fa-4x" style="font-size: 1em;"></i> Github</a> 
-    <a class="button" href="https://rapidcharts.io/datascience"><i class="fas fa-book faa-book animated-hover fa-4x" style="font-size: 1em;"></i> Course</a>
+    <a class="button" href="index.html"><i class="fa-solid fa-igloo fa-bounce"></i> Home</a>  
+    <a class="buttonActive" href="Skills.html"><i class="fa-solid fa-folder-open"></i> Portfolio</a>
+    <a class="button" href="project.html"><i class="fa-solid fa-rocket fa-bounce"></i> Project</a> 
+    <a class="button" href="https://github.com/aarontyler1/aarontyler1.github.io"><i class="fab fa-github faa-github fa-bounce" style="font-size: 1em;"></i> Github</a> 
+    <a class="button" href="https://rapidcharts.io/datascience"><i class="fa-solid fa-chart-column fa-bounce" style="font-size: 1em;"></i> RapidCharts</a>
   </p>
 
 </container>
@@ -73,62 +72,89 @@
 
     <!---------------------------------------------  New Object for Next section------------------------------------------------------>
 <container class="hcontainer">
-  <p class="bodyText"><span style="color: rgb(255, 0, 200); font-weight: 700; font-size:25px;">Getting Started</p>
+  <p class="bodyText"><span style="color: rgb(0, 0, 0); font-weight: 700; font-size:25px;">Getting Started</p>
 
   <h3>Week 1</h3>
-  <p>The chart tracks Covid-19 cases by UK region.</p>
+  <p>Embedding my first two charts into my webpage</p>
 
-<!--First Charts-->
-<div class="chart" id="Chart1"><script>
-  var myChart1 = "agingPopulation.json"; vegaEmbed('#Chart1', myChart1);
-</script></div>
-<h3>Productivity chart</h3>
-
-<!--Second Chart -->
-<div class="chart" id="Chart2"><script>
-  var myChart2 = "decliningPopulation.json"; vegaEmbed('#Chart2', myChart2);
-</script></div>
-<h3>Environment Chart</h3>
-<p>The chart looks at UK CO2 emissions, by sector</p>
-
-<!--Third Chart -->
-<div class="chart" id="Chart3"><script>
-  var myChart3 = "IMF_OutstandingCredit.json"; vegaEmbed('#Chart3', myChart3);
-</script></div>
+  <table>
+    <tr>
+        <td><!--First Charts-->
+          <h3>Aging Populations</h3>
+          <div class="chart" id="Chart1"><script>
+            var myChart1 = "agingPopulation.json"; vegaEmbed('#Chart1', myChart1);
+          </script></div>
+        </td>
+        <td><!--Second Chart -->
+          <h3>Declining Populations</h3>
+          <div class="chart" id="Chart2"><script>
+            var myChart2 = "decliningPopulation.json"; vegaEmbed('#Chart2', myChart2);
+          </script></div>
+        </td>
+    </tr>
+ <table>
 </container>
+
+<!------------------------------------------------------  New Object for Next section------------------------------------------------->
+
+<container>
+  <container class="hcontainer">
+  </container>
+
 <container>
  
     <!-----------------------------------------------------  New Object for Next section---------------------------------------------->
 <container class="hcontainer">
-<p class="bodyText"><span style="color: rgb(49, 6, 40); font-weight: 700;font-size:25px;">Week 2: Hosting Data</p>
+<p class="bodyText"><span style="color: rgb(49, 6, 40); font-weight: 700;font-size:25px;">My first original adapted piece!</p>
+  <h3>Week 2</h3>
 
-<h3>UK Coronavirus Data Charts</h3>
-<p>The chart looks at new coronavirus cases in the UK, using API</p>
+  <p>This first chart was originally taken from the Financial times, but I have made amendments using the 
+    transform function to make the information alot more digestable as a ratio of world GDP for scale factors.</p>
 
-<!--Fourth Chart -->
-<div class="chart" id="Chart4"><script>
-  var myChart4 = "Divorces_EnglandWales.json"; vegaEmbed('#Chart4', myChart4);
-</script></div> 
-<p>The chart looks at new coronavirus cases in the UK, using own data</p>
+  
+  
+  <!--Chart I forgot to add in so is now 22 -->
+  <div class="chart" id="Chart22"><script>
+    var myChart22 = "IMF_OutstandingCreditBasic.json"; vegaEmbed('#Chart22', myChart22);
+  </script></div>
+       
+<h3>And this second graph is the newly improved version which uses percentages rather than extremely large and scary numbers,
+  since charts and graphs are meant to be an easy way to take in information.</h3>
 
-<!--Fifth Chart -->
-<div class="chart" id="Chart5"><script>
-  var myChart5 = "Divorces_EnglandWalesBar.json"; vegaEmbed('#Chart5', myChart5);
-</script></div> 
+  <!--Third Chart -->
+<div class="chart" id="Chart3"><script>
+  var myChart3 = "IMF_OutstandingCredit.json"; vegaEmbed('#Chart3', myChart3);
+</script></div>
 
+<p>And overall I will have to agree with the class that 2022 is the most risky year due to having the most outstanding credit relative to GDP</p>
+ 
+</container>  
 
 
 <!-------------------------------------------------------  New Object for Next section------------------------------------------------->
 <container>
 <container class="hcontainer">
-<p class="bodyText"><span style="color: rgb(49, 6, 40); font-weight: 700;font-size:25px;">Week 3: Editing Data</p>
-<h3>BitCoin Price Charts</h3>
-<p>The chart uses an in-line JSON list as its data source</p>
+<p class="bodyText"><span style="color: rgb(49, 6, 40); font-weight: 700;font-size:25px;">Using Incline data objects for visual encoding</p>
+  <h3>Week 3</h3>
+<p>The chart looks at the divorces in England and Wales using data implemented in its code rather than being sourced
+  externally.
+</p>
 
-<!---Fith Chart -->
-<div class="chart" id="Chart6"><script>
-  var myChart6 = "Chess_Rankings.json"; vegaEmbed('#Chart6', myChart6);
-  </script></div> 
+<!--Fourth Chart -->
+<div class="chart" id="Chart4"><script>
+  var myChart4 = "Divorces_EnglandWalesBar.json"; vegaEmbed('#Chart4', myChart4);
+</script></div> 
+<p>However I ran into the issue of having the data blocking up especially since it was in such tight increments hence I decided
+  to use an alternative visual encoding. Hence the addition of the line graph as it provided a much more easily interpretable
+  set of results in its visualisation.
+</p>
+
+<!--Fifth Chart -->
+<div class="chart" id="Chart5"><script>
+  var myChart5 = "Divorces_EnglandWales.json"; vegaEmbed('#Chart5', myChart5);
+</script></div> 
+
+
   </container>
 
 </container>
@@ -136,94 +162,91 @@
 <!-----------------------------------------------------  New Object for Next section-------------------------------------------------->
 <container>
 <container class="hcontainer">
-<p class="bodyText"><span style="color: rgb(49, 6, 40); font-weight: 700;font-size:25px;">Week 4: API driven charts</p>
+<p class="bodyText"><span style="color: rgb(49, 6, 40); font-weight: 700;font-size:25px;">Data Scrapping and cleaning</p>
+  <h3>Week 4</h3>
 
-<h3>FRED data charts</h3>
-<p>The chart looks at US government spending on education, using FRED API</p>
-
-  <!-- Sixth Chart -->
-  <div class="chart" id="Chart7"><script>
-    var myChart7 = "data_ONS_KI2V.json"; vegaEmbed('#Chart7', myChart7);
-  </script></div>
 
   
-  <!-- Seventh Chart -->
-  <div class="chart" id="Chart8"><script>
-    var myChart8 = "data_ONS_RADC.json"; vegaEmbed('#Chart8', myChart8);
-  </script></div>
+  <!---Fith Chart -->
+  <div class="chart" id="Chart6"><script>
+    var myChart6 = "Chess_Rankings.json"; vegaEmbed('#Chart6', myChart6);
+    </script></div>
 
-  <!-- Eighth Chart -->
-  <div class="chart" id="Chart9"><script>
-   var myChart9 = "data_ONS_RLJR.json"; vegaEmbed('#Chart9', myChart9);
-  </script></div>
+<p>The chart uses a Scrapper to remove data from the Chess Championship Elo Rankings Website which I have then cleaned and 
+  processed into a TIDY format which is more feasible to use in data visualisations. Achieving the TIDY form took alot of
+  manipulation using Python but I was eventually able to plot the two data fields against oneanother in a scatterplot 
+</p>
+<p>This was a great site to use as it offered a well structured and digestable table form which would be perfect for Scrapping
+  and extracting data from!
+</p>
+<p> The colab notebook can be found <a href="https://colab.research.google.com/drive/1a30E_oXX50LwyKWOTTpFyAdXpY2kjt8C?usp=sharing">here</a></p>
 
-  
-    <!-- Ninth Chart -->
-<div class="chart" id="Chart10"><script>
-  var myChart10 = "data_ONS_RLJT.json"; vegaEmbed('#Chart10', myChart10);
-</script></div>
-
- <!-- Tenth Chart -->
-<div class="chart" id="Chart11"><script> 
-var myChart11 = "data_ONS_RLJX.json";vegaEmbed('#Chart11', myChart11);
-</script></div>
-
-  <!-- Eleventh chart -->
-<div class="chart" id="Chart12"><script>
-  var myChart12 = "data_ONS_RLKE.json";vegaEmbed('#Chart12', myChart12);
-</script></div>
-
-   <!-- Twelth Chart -->
-<div class="chart" id="Chart13"><script>
-  var myChart13 = "data_ONS_RLKG.json";vegaEmbed('#Chart13', myChart13);
-</script></div>
-
-  <!-- Thirteenth Chart -->
-<div class="chart" id="Chart14"><script>
-  var myChart14 = "data_ONS_RLKH.json";vegaEmbed('#Chart14', myChart14);
-</script></div>
-
-<!-- Fourteenth Chart -->
-<div class="chart" id="Chart15"><script>
-    var myChart15 = "data_ONS_RLKJ.json"; vegaEmbed('#Chart15', myChart15);
-</script></div>
 
   </container>
 
 
 
-<!------------------------------------------------------  New Object for Next section------------------------------------------------->
 
-<container>
-<container class="hcontainer">
-
-<p class="bodyText"><span style="color: rgb(49, 6, 40); font-weight: 700;font-size:25px;">Week 5: Loops and APIs</p>
-<h3>Four charts using Python loops</h3>
-<p> The colab notebook can be found <a href="https://colab.research.google.com/drive/1veIlL7crqfK76uaUFV1DSPUzLT32ctTB?usp=sharing">here</a></p>
-
-   
-<p>The chart looks at Real Median Household Income in the United States, using FRED API</p>
-<p>The chart uses observations that were edited manually</p>
-
-
-</container>
 <!-------------------------------------------------------  New Object for Next section----------------------------------------------->
 
 <container>
 <container class="hcontainer">
-<p class="bodyText"><span style="color: rgb(49, 6, 40); font-weight: 700;font-size:25px;">Week 7: Scrapers</p>
-<h3>Educational attainment per state</h3>
-<p>The chart was made by scraping data from Wikipedia, using python pandas. The colab notebook can be found 
+<p class="bodyText"><span style="color: rgb(49, 6, 40); font-weight: 700;font-size:25px;">Building a Chart Dashboard</p>
+  <h3>Week 5</h3>
+  <h3>These Nine Charts are all showing Investments, Pensions and Trusts within the Financial sector. Comparing either 
+    their overall share holdings, assets and liabilities with breakdowns of net levels of investment within their respective areas throughout the years.
+  </h3>
+  
+    <!-- Sixth Chart -->
+    <div class="chart" id="Chart7"><script>
+      var myChart7 = "data_ONS_KI2V.json"; vegaEmbed('#Chart7', myChart7);
+    </script></div>
+  
+    
+    <!-- Seventh Chart -->
+    <div class="chart" id="Chart8"><script>
+      var myChart8 = "data_ONS_RADC.json"; vegaEmbed('#Chart8', myChart8);
+    </script></div>
+  
+    <!-- Eighth Chart -->
+    <div class="chart" id="Chart9"><script>
+     var myChart9 = "data_ONS_RLJR.json"; vegaEmbed('#Chart9', myChart9);
+    </script></div>
+  
+    
+      <!-- Ninth Chart -->
+  <div class="chart" id="Chart10"><script>
+    var myChart10 = "data_ONS_RLJT.json"; vegaEmbed('#Chart10', myChart10);
+  </script></div>
+  
+   <!-- Tenth Chart -->
+  <div class="chart" id="Chart11"><script> 
+  var myChart11 = "data_ONS_RLJX.json";vegaEmbed('#Chart11', myChart11);
+  </script></div>
+  
+    <!-- Eleventh chart -->
+  <div class="chart" id="Chart12"><script>
+    var myChart12 = "data_ONS_RLKE.json";vegaEmbed('#Chart12', myChart12);
+  </script></div>
+  
+     <!-- Twelth Chart -->
+  <div class="chart" id="Chart13"><script>
+    var myChart13 = "data_ONS_RLKG.json";vegaEmbed('#Chart13', myChart13);
+  </script></div>
+  
+    <!-- Thirteenth Chart -->
+  <div class="chart" id="Chart14"><script>
+    var myChart14 = "data_ONS_RLKH.json";vegaEmbed('#Chart14', myChart14);
+  </script></div>
+  
+  <!-- Fourteenth Chart -->
+  <div class="chart" id="Chart15"><script>
+      var myChart15 = "data_ONS_RLKJ.json"; vegaEmbed('#Chart15', myChart15);
+  </script></div>
 
-<!-- Fifthteenth Chart -->
-<div class="chart" id="Chart16"><script>
-  var myChart16 = "Map_Simple.json"; vegaEmbed('#Chart16', myChart16);
-</script></div>
 
- <!-- Sixteenth Chart -->
- <div class="chart" id="Chart17"><script>
-  var myChart17 = "Map_Advanced.json"; vegaEmbed('#Chart17', myChart17);
-</script></div>
+
+<p> The colab notebook can be found <a href="https://colab.research.google.com/drive/1qXo1wUe2eA1eWFYlX9GaWXQM-9Y8o2eJ?usp=sharing">here</a></p>
 
 
 
@@ -236,7 +259,7 @@ var myChart11 = "data_ONS_RLJX.json";vegaEmbed('#Chart11', myChart11);
 
 
 
-<a href="https://colab.research.google.com/drive/1B7lbt7UPaiZfDueZCE3lY0jaBMTC4Q5H?usp=sharing">here</a></p>
+
 
 
 
@@ -244,59 +267,117 @@ var myChart11 = "data_ONS_RLJX.json";vegaEmbed('#Chart11', myChart11);
 
 <container>
 <container class="hcontainer">
-<p class="bodyText"><span style="color: rgb(49, 6, 40); font-weight: 700;font-size:25px;">Week 8: Data Stories</p>
-<h3>Female-led countries handled coronavirus better</h3>
-<p>This is my chart inspired by Sarah Smith's argument that "Female leaders have handled coronavirus better", during the "An unfair crisis" talk. The chart compares 
-    'nearest neighbour' countries to offset the small sample size, pairing countries with similar characteristics such as population. It is clear that, the argument is valid as 
-    female-led countries have significantly lower death tolls. This difference could be explained by their risk aversion with regards to life and their willingness to
-     take risks in the domain of the economy.</p>
+<p class="bodyText"><span style="color: rgb(49, 6, 40); font-weight: 700;font-size:25px;">Creating Maps</p>
+  <h3>Week 6</h3>
 
-   <!-- Fifthteenth Chart -->
-<div class="chart" id="Chart18"><script>
-  var myChart18 = "femaleleader.json"; vegaEmbed('#Chart18', myChart18);
+  <h3>Here I have produced two maps, with one being a basic models of boroughs in London. While the other showcases
+    a Chloropleth Map which breaks down Crime Counts amoung neighbouring boroughs in 2021, which are all distinguished by their
+    respective colour coding.
+  </h3>
+
+  <!-- Fifthteenth Chart -->
+<div class="chart" id="Chart16"><script>
+  var myChart16 = "SimpleMap.json"; vegaEmbed('#Chart16', myChart16);
 </script></div>
+
+ <!-- Sixteenth Chart -->
+ <div class="chart" id="Chart17"><script>
+  var myChart17 = "AdvancedMap.json"; vegaEmbed('#Chart17', myChart17);
+</script></div>
+
+
+
+
+
+
+
+ 
 </container>
 
-<!--  New Object for Next section-->
+<!--------------------------------------------------  New Object for Next section----------------------------------------->
 
 <container>
 <container class="hcontainer">
-<p class="bodyText"><span style="color: rgb(49, 6, 40); font-weight: 700;font-size:25px;">Week 9: Advanced Analytics</p>
-<h3>Fox News and Republican Voting</h3>
-<p>Linear Regression chart, using raw data from two sources</p>
+<p class="bodyText"><span style="color: rgb(49, 6, 40); font-weight: 700;font-size:25px;">The Festival of Economics</p>
+  <h3>Week 7</h3>
 
-   <!-- Sixteenth Chart -->
-<div class="chart" id="Chart19"><script>
-  var myChart19 = "foxnewsregression.json"; vegaEmbed('#Chart19', myChart19);
-</script></div>
+  <h3>We had the amazing opportunity to attend the Festival of Economics where we were exposed to many amazing speakers
+    and economic problems first hand. Hence I have created two graphs in evidence for their arguments, but as there were
+  too many iteresting arguments I had to choose a mix of two. </h3>
+  
+  
+     <!-- Fifthteenth Chart -->
+     <p>This Graph shows job vacancies is correlated to the cost of living/household expenditure as people
+      struggle to live theyre always on the hunt for better paid work.
+     </p>
+  <div class="chart" id="Chart18"><script>
+    var myChart18 = "Cost of Living.json"; vegaEmbed('#Chart18', myChart18);
+  </script></div>
+  
+    <!-- Sixteenth Chart -->
+    <p>This second graph shows how countries can sustainably balance their Climate performance and still experience
+      some level of GDP growth.
+    </p>
+    <div class="chart" id="Chart19"><script>
+      var myChart19 = "CCPI and GDP.json"; vegaEmbed('#Chart19', myChart19);
+    </script></div>
+
+
+
+
+
+ 
 </container> 
 
 <!--  New Object for Next section-->
 
 <container>
 <container class="hcontainer">
-<p class="bodyText"><span style="color: rgb(49, 6, 40); font-weight: 700;font-size:25px;">Week 10: Interactivity</p>
-<h3>Real Median Household Income in the US</h3>
-<p>The chart includes an interactive selector for a specific time period and a tooltip. The chart was made using six different APIs</p>
+<p class="bodyText"><span style="color: rgb(49, 6, 40); font-weight: 700;font-size:25px;">Advanced Charts</p>
+  <h3>Week 8</h3>
+
+  <h3>These are two more advanced charts using more indepth analysis and techniques. </h3>
+
 
    <!-- Seventeenth Chart -->
-<div class="chart" id="Chart20"><script>
-  var myChart20 = "stateincomefred.json"; vegaEmbed('#Chart20', myChart20);
-</script></div>
+   <p>This Graph looks to determine if there exists a relationship between the population density of people within a borough
+    and a high level of knife crime in the area through regression analysis. And I found there is no determinable relationship
+    hence the line of best fit being so small for the graph and having such a low R^2 value.
+   </p>
+   <div class="chart" id="Chart20"><script>
+    var myChart20 = "PopDensity and KnifeCrime.json"; vegaEmbed('#Chart20', myChart20);
+  </script></div>
 
-<h3>Average Annual Wage in the US</h3>
-<p>The chart includes an interactive selector for the countries and a tooltip</p>
-
-   <!-- Eighteenth Chart -->
+     <!-- Eighteenth Chart -->
+     <p>The next graph considers a different potential factor for London's Crime rates and that is the Index of Multiple
+      Deprivations within boroughs, and is presented through the use of an interactive scatter plot.
+     </p>
 <div class="chart" id="Chart21"><script>
-  var myChart21 = "wage.json"; vegaEmbed('#Chart21', myChart21);
-</script></div>      
+  var myChart21 = "IMD_Crime_Count.json"; vegaEmbed('#Chart21', myChart21);
+</script></div> 
+
+<p>The chart includes a tooltip which gives specfic information for every individual Borough to help the audience have their own
+  better interpretation of the relationship and results of the graph.
+</p>
+
+<br></br>
+
+<div><h2><b>Created by Aaron Tyler</b> </h2></div>
+
+
+     
 </container> 
+
 
 
 </div> 
+
+
   
 </body>
+
+
+
 </div>
 
 

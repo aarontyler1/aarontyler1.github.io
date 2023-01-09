@@ -1,0 +1,63 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  
+  "width":700,
+  "height":500,
+          
+   "data": {
+      "url": "https://raw.githubusercontent.com/aarontyler1/aarontyler1.github.io/main/london_boroughs.json",
+          "format": {"property": "features"}
+        },
+  
+          "projection": {
+            "type":"mercator"
+          },
+  
+          "transform": [
+            {
+              "lookup": "properties.name",
+  
+              "from":{
+                "data":{
+                  "url": "https://raw.githubusercontent.com/aarontyler1/aarontyler1.github.io/main/Boroughknifecrime.csv"},
+                  "key":"Borough",
+                  "fields": ["2021 Crime count"]
+              } 
+            }
+  
+  
+  
+  
+          ],  
+  
+          "mark":{
+            "type": "geoshape",
+            
+            "stroke":"grey",
+            "strokeWidth":1
+          },
+  
+  "encoding": {
+  
+    "color":{
+      "field":"2021 Crime count",
+      "type": "quantitative"
+    },
+  
+    "tooltip":[{"field":"properties.name", "type": "nominal", "title": "London Borough"},
+              {"field":"2021 Crime count", "title":"Crime Count"}]
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  }

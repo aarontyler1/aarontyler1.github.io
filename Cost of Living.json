@@ -1,0 +1,76 @@
+
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "Sugar 4b",
+      "width": 250,
+    "height": 300,
+    "title": {
+      "text": "Cost of Living Crisis",
+      "subtitle": "Houshold Expenditure versus Job vacancies at the time."},
+    "data": {
+      "url": "https://raw.githubusercontent.com/aarontyler1/aarontyler1.github.io/main/Cost%20of%20living%20crisis.csv",
+      "format": {"type": "csv"}
+    },
+    "encoding": {
+      "x": {
+        "field": "Quarters",
+        "type": "nominal",
+        "title": "Quarters",
+        "axis": {"labelAngle": 60, "labelFontSize":8}
+      }
+       
+    },
+    "layer": [
+      {
+        "mark": {"opacity": 0.5, "type": "bar", "color": "#e6224b"},
+        "encoding": {
+          "y": {
+            "field": "Value",
+            "type": "quantitative",
+            "scale": {"domain": [0, 750000]},
+            "title": "Household Spending (Millions)",
+            "axis": {"titleColor": "#36b7b4"}
+          },
+          "color": {
+        "field": "Type",
+        "type": "nominal",
+        "legend": {"orient": "right"},
+        "scale": {
+          "domain": [
+            "Total domestic expenditure",
+            "Food and drink",
+            "Alcohol, tobacco and narcotics",
+            "Clothing and footwear",
+            "Housing",
+            "Furnishings, household equipment and routine maintenance of the house",
+            "Health",
+            "Transport",
+            "Communication",
+            "Recreation and culture",
+            "Education",
+            "Housing",
+            "Restaurants and hotels",
+            "Miscellaneous"
+             ],
+          "scheme": "yellowgreenblue"
+        },
+        "title": "Houshold Expenditure:"
+      }
+        }
+      },
+      {
+        "mark": {"stroke": "#000000", "type": "line", "interpolate": "monotone"},
+        "encoding": {
+          "y": {
+            "field": "Job Vacancies (Thousands",
+            "type": "quantitative",
+            "title": "Job Vacancies (Thousands)",
+            "scale": {"domain": [0, 1800]},
+            "axis": {"titleColor": "#000000"}
+          }
+        }
+      }
+    ],
+    "resolve": {"scale": {"y": "independent"}}
+  }
+  

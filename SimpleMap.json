@@ -1,0 +1,46 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "London Borough Map",
+    "subtitle":["Interactive Map including the names of all London Boroughs"],
+    "subtitleFontStyle":"italic",
+    "subtitleFontSize":10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "width":700,
+  "height":500,
+          
+   "data": {
+      "url": "https://raw.githubusercontent.com/aarontyler1/aarontyler1.github.io/main/london_boroughs.json",
+          "format": {"property": "features"}
+        },
+  
+          "projection": {
+            "type":"mercator"
+          },
+  
+          "mark":{
+            "type": "geoshape",
+            "fill":"limegreen",
+            "stroke":"grey",
+            "strokeWidth":1
+          },
+  
+  "encoding": {
+    "tooltip":{"field":"properties.name", "type": "nominal"}
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  }
