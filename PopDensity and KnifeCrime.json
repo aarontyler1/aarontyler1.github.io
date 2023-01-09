@@ -32,7 +32,7 @@
 
           "tooltip":[
         {"field":"Borough", "type": "ordinal", "title":"Country"},
-        {"field":"Knife Crime 2021", "type": "quantitative", "title":"CCPI Rank"}
+        {"field":"Knife Crime 2021", "type": "quantitative", "title":"Knife Crime"}
       ]
       }
     },
