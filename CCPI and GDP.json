@@ -55,7 +55,7 @@
 
       "tooltip":[
         {"field":"Country", "type": "ordinal", "title":"Country"},
-        {"field":"Climate Rank", "type": "quantitative", "title":"CCPI Rank"}
+        {"field":"Climate Rank", "type": "quantitative", "title":"Climate Support Rank"}
       ]
      }
   }
