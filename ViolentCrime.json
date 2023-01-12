@@ -1,0 +1,103 @@
+
+
+
+
+{
+    "data": {
+      "url": "https://raw.githubusercontent.com/aarontyler1/aarontyler1.github.io/main/CPI%20and%20Crime.csv"},
+  
+        "transform": [
+    {"calculate": "datum.CPI_Percentage_Change/100", "as": "Percentage",
+    "format":""}
+    ],
+  
+    "height": 200,
+    "width": 300,
+
+
+    "background": null,
+    "config": {
+        "view": {
+           "stroke": "transparent"
+        }
+      },
+  
+    "title": {
+        "text": "The Regression Of Violent Crime rates and Costs of Living",
+        "subtitle":["Using the Violent Crime rates (Monthly) and regressing them on the Percentage","change in the Consumer Price Index (Costs of living Monthly) to test causality.", "This case considers the Retail Price Index (CPI), Source : FRED, UKCrimeStats"],
+        "subtitleFontStyle":"italic",
+        "subtitleFontSize":10,
+        "anchor": "start",
+        "color": "black"
+      },
+  
+    "layer": [
+      {
+        
+        "mark": {
+          "type": "point",
+          "filled": true
+        },
+        "encoding": {
+          "x": {
+            "field": "Percentage",
+            "type": "quantitative",
+            
+            "axis":{"format":"%"}
+          },
+          "y": {
+            "field": "Violent Crimes",
+            "type": "quantitative",
+            "scale":{"domain" : [5000,25000]}
+          }
+        }
+        
+      },
+      
+      {
+        "mark": {
+          "type": "line",
+          "color": "firebrick"
+        },
+        "transform": [
+          {
+            "regression": "Violent Crimes",
+            "on": "Percentage"
+          }
+        ],
+  
+        "encoding": {
+          "x": {
+            "field": "Percentage",
+            "type": "quantitative",
+            "title":"CPI Percentage Change",
+            "format":"%"
+          },
+          "y": {
+            "field": "Violent Crimes",
+            "type": "quantitative"
+          }
+        }
+      },
+      {
+        "transform": [
+          {
+            "regression": "Violent Crimes",
+            "on": "CPI Index 2015 = 100",
+            "params": true
+          },
+          {"calculate": "'R²: '+format(datum.rSquared, '.2f')", "as": "R2"}
+        ],
+        "mark": {
+          "type": "text",
+          "color": "firebrick",
+          "x": "width",
+          "align": "right",
+          "y": -5
+        },
+        "encoding": {
+          "text": {"type": "nominal", "field": "R2"}
+        }
+      }
+    ]
+  }

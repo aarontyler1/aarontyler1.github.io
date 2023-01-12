@@ -1,0 +1,106 @@
+
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "Sugar 4b",
+      "width": 400,
+    "height": 300,
+
+   
+
+    "config": {
+        "view": {
+           "stroke": "transparent"
+        }
+      },
+      "background":null,
+    "title": {
+      "text": "Breakdown of Crime across London (2018-2021)",
+      "subtitle": ["The number of crimes (of various offences) per 1000 Residents of London.","Source : Crimerate"]},
+    "data": {
+      "url": "https://raw.githubusercontent.com/aarontyler1/aarontyler1.github.io/main/CrimeLondon.csv",
+      "format": {"type": "csv"}
+    },
+    "encoding": {
+      "x": {
+        "field": "Year",
+        "type": "ordinal",
+        "title": "Years",
+        "axis": {"labelAngle": 360, "labelFontSize":12}     
+        
+        
+      }
+       
+    },
+    "layer": [
+      {
+        "mark": {"opacity": 0.7, "type": "bar", "color": "#e6224b"},
+        "encoding": {
+          "y": {
+            "field": "Rate per 1000 Residents",
+            "type": "quantitative",
+            "scale": {"domain": [0,140]},
+            "title": "Crime Rate (Per 1000 Residents)",
+            "axis": {"titleColor": "#000000", "grid": false}
+            
+          },
+
+   "tooltip": [
+      {"field": "Crime"},
+      {"field": "Year"},
+      {"field": "Rate per 1000 Residents","title":"Offences per 1000 Residents", "format": ".5"},
+      {"field": "Trend"}
+    ],
+
+
+
+
+          "color": {
+        "field": "Crime",
+        "type": "nominal",
+        "legend": {"orient": "right"},
+        "scale": {
+          "domain": [
+            "Anti-Social Behaviour",
+"Bicycle Theft",
+"Burglary",
+"Criminal Damage and Arson",
+"Drugs",
+"Other Crime",
+"Other Theft",
+"Possession of Weapons",
+"Public Order",
+"Robbery (inc. mugging)",
+"Shoplifting",
+"Theft From the Person (inc. pickpocketing)",
+"Vehicle Crime",
+"Violence and Sexual Offences",
+"Anti-Social Behaviour",
+"Bicycle Theft",
+"Burglary",
+"Criminal Damage and Arson",
+"Drugs",
+"Other Crime",
+"Other Theft",
+"Possession of Weapons",
+"Public Order",
+"Robbery (inc. mugging)",
+"Shoplifting",
+"Theft From the Person (inc. pickpocketing)",
+"Vehicle Crime",
+"Violence and Sexual Offences"
+
+             ],
+          "scheme": "set1"
+        },
+        "title": "London Crime Breakdown"
+      }}
+      }
+ 
+            
+          
+        
+      
+    ]
+   
+  }
+  

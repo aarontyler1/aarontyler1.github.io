@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <script src="https://kit.fontawesome.com/2fbbc375cc.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href= "Project.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+ <!--Internet Tab Image-->
+    <link rel="icon" href="computer-11053.png">
+    <title>Aaron Tyler - Why is Crime in London still on the rise?</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+      body {margin: 0;text-align: center !important;}   
+    </style>
+
+        <!--Vega embed SCRIPTS-->
+<script src="https://cdn.jsdelivr.net/npm/vega@5.17.0"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega-lite@4.17.0"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega-embed@6.12.2"></script>
+
+    
+</head>
+
+<div id="loader">
+  <div id="L1"></div>
+  <div id="L2"></div>
+</div>
+
+<!--------------------------------------    Loading Page Messages ------------------------------------------------------------------->
+<div id="loadermessage">Slowly getting there....</div></head>
+<body onload="myFunction()" style="margin:0;">
+<div id="loader"></div>
+
+
+<div style="display:none;" id="myDiv" class="animate-bottom"> <script>
+    var myVar;
+    function myFunction() 
+    {myVar = setTimeout(showPage, 3000);}
+    function showPage() {document.getElementById("loader").style.display = "none";
+      document.getElementById("loadermessage").style.display = "none";
+      document.getElementById("myDiv").style.display = "block";}
+    </script>
+<body>
+ 
+<!------ To Make sure that the title is flush with the top of the browser to remove whitespace------>
+<div style="margin-top:-10px;text-align:center !important;padding:1px 16px;">
+ <header>
+
+<!----------TitleBar Container-------->
+<container><container class="hcontainer">
+<h1>Data<span style="color:rgb(255, 0, 0)">Science</span> Portfolio</h1></span>
+
+
+<!----------------------------------------------------- Interactive Buttons ---------------------------------------------------------->
+
+  <p>
+    <a class="button" href="index.html"><i class="fa-solid fa-igloo fa-bounce"></i> Home</a>  
+    <a class="button" href="PortfolioSkills.html"><i class="fa-solid fa-folder-open fa-bounce"></i> Portfolio</a>
+    <a class="buttonActive" href="Project.html"><i class="fa-solid fa-rocket"></i> Project</a> 
+    <a class="button" href="https://github.com/aarontyler1/aarontyler1.github.io"><i class="fab fa-github faa-github fa-bounce" style="font-size: 1em;"></i> Github</a> 
+    <a class="button" href="https://rapidcharts.io/datascience"><i class="fa-solid fa-chart-column fa-bounce" style="font-size: 1em;"></i> RapidCharts</a>
+  </p>
+
+</container>
+</header>
+
+<container>
+
+    <!---------------------------------------------  New Object for Next section------------------------------------------------------>
+<container class="hcontainer">
+  <p class="bodyText"><span style="color: rgb(0, 0, 0); font-weight: 700; font-size:25px;">Why is Crime in London still on the rise?</p>
+    
+<p>With one of the highest-ranking Police Forces in the world. Why Can't the Metropolitan get London under control? Why does London have a seemingly unthrottled increase in crime rates. And what could be a potential cause? If there is only one?
+</p><p>I will be investigating whether crime stems from the poor presence and quality of the Police Forces? Or could it be down to the social conditions of the populations committing them.</p>
+<br>
+<h3>This is a map of Europe explores the Quality and Quantity of Police forces. Depicting the number of officers each country has per 100,000 residents. Accompanied with data on the Law-and-Order Index.</h3>
+
+ 
+        <td><!--First Charts-->
+          
+          <div class="chart2" id="Chart1"><script>
+            var myChart1 = "PoliceMap.json"; vegaEmbed('#Chart1', myChart1);
+          </script></div>
+
+<p><a href="https://colab.research.google.com/drive/1R1AI3Cblq9OO5X2IUv4-XW2ezmjB0Boe?usp=sharing">The Notebook</a></p>
+</container>
+
+<!------------------------------------------------------  New Object for Next section------------------------------------------------->
+
+<container>
+  <container class="hcontainer">
+  </container>
+
+<container>
+ 
+    <!-----------------------------------------------------  New Object for Next section---------------------------------------------->
+<container class="hcontainer">
+<p class="bodyText"><span style="color: rgb(49, 6, 40); font-weight: 700;font-size:25px;"> Breakdown of the Crime in London</p>
+    
+  
+  <!--Chart I forgot to add in so is now 22 -->
+  <div class="chart" id="Chart22"><script>
+    var myChart22 = "LondonCrime.json"; vegaEmbed('#Chart22', myChart22);
+  </script></div>
+
+<p></p>
+       
+<h3></h3>
+</container>  
+
+
+<!-------------------------------------------------------  New Object for Next section------------------------------------------------->
+<container>
+<container class="hcontainer">
+<p class="bodyText"><span style="color: rgb(49, 6, 40); font-weight: 700;font-size:25px;">The Investigation</p>
+  <h3>My Third and Fourth Charts look at regression analysis between differing datasets to determine the existence of any causality within London’s Crime rates. These social factors affecting quality of life in London could be the root to the antisocial behaviour and violence.</h3>
+<table>
+    <tr>
+        <td><!--First Charts-->
+          <h3>Cost of Living on the Crime Rate</h3>
+          <div class="chart" id="Chart4"><script>
+            var myChart4 = "ViolentCrime.json"; vegaEmbed('#Chart4', myChart4);
+          </script></div><p><a href="https://colab.research.google.com/drive/12KLeKCktumE8gkkzzTiVKn5804mJP1bb?usp=sharing">The Notebook</a></p><p><a href="https://colab.research.google.com/drive/17sr3E1PSArd-jpOVS3u7cDK-8S40Dv2W?usp=sharing">The Notebook 2</a></p>
+        </td>
+        <td><!--Second Chart -->
+          <h3>Number of Police Officers on the Crime Rate</h3>
+          <div class="chart" id="Chart5"><script>
+            var myChart5 = "PoliceStrength.json"; vegaEmbed('#Chart5', myChart5);
+          </script></div><p><a href="https://colab.research.google.com/drive/15R7zCh6zokXrHXPNzQT9rUz8vUGIQyNm?usp=sharing">The Notebook</a></p>
+        </td>
+    </tr>
+ <table>
+
+
+ 
+
+</container>
+
+<!-----------------------------------------------------  New Object for Next section-------------------------------------------------->
+<container>
+<container class="hcontainer">
+<p class="bodyText"><span style="color: rgb(49, 6, 40); font-weight: 700;font-size:25px;"></p>
+  <h3></h3>
+
+
+  
+
+
+  </container>
+
+
+
+
+<!-------------------------------------------------------  New Object for Next section----------------------------------------------->
+
+<container>
+<container class="hcontainer">
+
+  <table>
+    <tr>
+
+    <p class="bodyText"><span style="color: rgb(49, 6, 40); font-weight: 700;font-size:25px;">What could be causing crime at a local level?</p>
+        <h3></h3>
+        <h3>These Last two charts have a scatter visualisation which consider a more local data analysis of boroughs in London. To take advantage of their differing crime rates and social factors to determine potential causality in the Deprivation and Population density on the crime rates within these areas.
+        </h3>
+
+
+    </tr>
+    <tr>
+        <td> 
+   <!---Fith Chart --><h3>Deprivation and Crime Count (Boroughs)</h3>
+   <div class="chart2" id="Chart6"><script>
+    var myChart6 = "IMD_Crime_Count.json"; vegaEmbed('#Chart6', myChart6);
+    </script></div>
+</td>
+<td>
+
+<!-- Sixth Chart --><h3>Population Density and Knife Crime (Boroughs)</h3>
+<div class="chart2" id="Chart7"><script>
+    var myChart7 = "PopDensity and KnifeCrime.json"; vegaEmbed('#Chart7', myChart7);
+  </script></div>
+    </td>
+</tr>
+<table>
+
+
+
+   
+ 
+
+
+
+
+<br>
+<container>
+    <container class="hcontainer">
+    </container>
+  
+  <container>
+   
+
+
+  </container>
+
+  
+</container>
+
+
+
+
+
+
+
+<!------------------------------------------------------  New Object for Next section---------------------------------------------->
+
+<container>
+<container class="hcontainer">
+<p class="bodyText"><span style="color: rgb(49, 6, 40); font-weight: 700;font-size:25px;">Data: Sourcing, Cleaning & Analysis</p>
+
+<p>The Choropleth Map was produced through an array of datasets and sources all merged and cleaned. The Original base TopoJSON map file was sourced through githubusercontent.com/deldersveld. Meanwhile the Police officer density data was manually scrapped from Wikipedia and formatted with python before it was merged with the Law-and-order dataset to be finally applied to the map.</p>
+<br>
+
+    <p>The Law-and-Order Index data came with so many challenges as it had to be PDF Scrapped from an Unstructured Table format. Which required the tabula package from google colab which used inputted coordinates and row/column identifiers to extract data. Since the data was all combined into a large group, split among multiple pages and in different coordinate positions per page. I had to run this process multiple times with iloc() over multiple concatenations to extract all the data to match the 48 countries used in the Choropleth Map. But finally, after Identifying, Extracting, and separating them into 6 tables I was finally able to re-concatenate them once again into a single stacked table with just two columns as an exportable csv file format.
+    </p><br>
+   <p> HTML Scrappers were essential in my collecting data off pages with tables sourcing from various places and allowing me to manipulate the data and filtering it into a wide of long form based on the requirements of the visualisation.</p>
+    <br>
+        <p>The use of API’s were extremely effective in exploring causality in this question. Since for my regression graphs it allowed me to loop batch download many similar CPI datasets that capture different “baskets of goods” by excluding certain elements. Which could be easily implemented into Vega and tested for their significance in crime rates. Making it a lot more efficient and replicable in finding the most suitable CPI index dataset. 
+        </p>
+
+
+
+<br>
+
+ 
+</container>
+
+<!--------------------------------------------------  New Object for Next section----------------------------------------->
+<container>
+    <container class="hcontainer">
+    <p class="bodyText"><span style="color: rgb(49, 6, 40); font-weight: 700;font-size:25px;">Conclusion</p>
+    
+    <p>To conclude my research task, I have found Violence and Antisocial Behaviour are London’s most prevalent offences which explains the city’s recent climb to the top of the homicide rankings. I tested if this could be down to the UK having one of the lowest police officer densities In Europe. But this factor had no regressive effects in increasing total offences in London. Hence I began to look at more civilian factors that may be increasing the London Crime Rates. </p>
+    <br>
+    
+        <p>There was a very high correlation (R^2=0.71) between Violent Crime offences and a positive percentage change of the CPI (sudden increase in cost of living) . Meaning residents are committing more violent crimes as the cost of living suddenly increases. Which also comes hand in hand with the results from Chart 5 stating more deprived boroughs in London (Lower Deprivation Rank) are found to be committing a staggeringly increased number of crimes than those higher on the index by around 50%.
+
+
+        </p>
+        
+      
+        <br>
+            <p>Overall, the data shows how the issues around London’s Crime rates seem to stem from the social conditions across the boroughs who are committing a lot more crime. Since those who are struggling with the costs of living are found being easily coerced into gang cultures, especially the younger population looking to help support their families. With evidence that the social conditions of London Boroughs and the city itself are continuing to influence the crime rates. Further investigation is paramount to determine the most significant factors keeping London on the top of the homicide rankings year in year out.
+            </p>
+    
+    
+    
+    
+    
+     
+    </container>
+    
+
+<br></br>
+
+<div><h2><b>Created by Aaron Tyler</b> </h2></div>
+
+
+     
+</container> 
+
+
+
+</div> 
+
+
+  
+</body>
+
+
+
+</div>
+
+
+</html>

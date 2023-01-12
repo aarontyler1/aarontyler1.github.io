@@ -2,7 +2,7 @@
 
     "title": {
       "text": "The Relationship of Deprivation and Crime.",
-      "subtitle":["Using the IMD index for multiple deprivation and comparing it to London","Boroughs and their crime rates", ""],
+      "subtitle":["Using the IMD index for multiple deprivation and comparing it to London","Boroughs and their crime rates", "Source : Gallup, London Datastore "],
       "subtitleFontStyle":"italic",
       "subtitleFontSize":10,
       "anchor": "start",

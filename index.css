@@ -1,9 +1,12 @@
-body {
-    background: rgba(255, 245, 221, 0.789);
-    max-width: 1400px;
-    margin: auto;
-    text-align: center;
-}
+  
+    body {
+        background-color: rgba(255, 245, 221, 0.789);
+        max-width: 50%;
+        margin: auto !important;
+        text-align: center;
+        
+        
+       }
 
 h1{
 

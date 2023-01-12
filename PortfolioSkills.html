@@ -59,8 +59,8 @@
 
   <p>
     <a class="button" href="index.html"><i class="fa-solid fa-igloo fa-bounce"></i> Home</a>  
-    <a class="buttonActive" href="Skills.html"><i class="fa-solid fa-folder-open"></i> Portfolio</a>
-    <a class="button" href="project.html"><i class="fa-solid fa-rocket fa-bounce"></i> Project</a> 
+    <a class="buttonActive" href="PortfolioSkills.html"><i class="fa-solid fa-folder-open"></i> Portfolio</a>
+    <a class="button" href="Project.html"><i class="fa-solid fa-rocket fa-bounce"></i> Project</a> 
     <a class="button" href="https://github.com/aarontyler1/aarontyler1.github.io"><i class="fab fa-github faa-github fa-bounce" style="font-size: 1em;"></i> Github</a> 
     <a class="button" href="https://rapidcharts.io/datascience"><i class="fa-solid fa-chart-column fa-bounce" style="font-size: 1em;"></i> RapidCharts</a>
   </p>
@@ -118,15 +118,15 @@
     var myChart22 = "IMF_OutstandingCreditBasic.json"; vegaEmbed('#Chart22', myChart22);
   </script></div>
        
-<p>And this second graph is the newly improved version which uses percentages rather than extremely large and scary numbers,
-  since charts and graphs are meant to be an easy way to take in information.<p>
+<h3>And this second graph is the newly improved version which uses percentages rather than extremely large and scary numbers,
+  since charts and graphs are meant to be an easy way to take in information.</h3>
 
   <!--Third Chart -->
 <div class="chart" id="Chart3"><script>
   var myChart3 = "IMF_OutstandingCredit.json"; vegaEmbed('#Chart3', myChart3);
 </script></div>
 
-<p>After adjusting the chart I have to disagree with the class as following the 1980's recession outstanding credit to GDP was alot higher than 2022</p>
+<p>And overall I will have to agree with the class that 2022 is the most risky year due to having the most outstanding credit relative to GDP</p>
  
 </container>  
 
@@ -144,8 +144,9 @@
 <div class="chart" id="Chart4"><script>
   var myChart4 = "Divorces_EnglandWalesBar.json"; vegaEmbed('#Chart4', myChart4);
 </script></div> 
-<p>I had issues with the visualisation in the bar chart structure so I used a the line graph as it provided more interpretable
-  results.
+<p>However I ran into the issue of having the data blocking up especially since it was in such tight increments hence I decided
+  to use an alternative visual encoding. Hence the addition of the line graph as it provided a much more easily interpretable
+  set of results in its visualisation.
 </p>
 
 <!--Fifth Chart -->
@@ -163,10 +164,7 @@
 <container class="hcontainer">
 <p class="bodyText"><span style="color: rgb(49, 6, 40); font-weight: 700;font-size:25px;">Data Scrapping and cleaning</p>
   <h3>Week 4</h3>
-<p>The chart uses a Scrapper to remove data from the Chess Championship Elo Rankings Website which I have then cleaned and 
-  processed into a TIDY format which is more feasible to use in data visualisations. Achieving the TIDY form took alot of
-  manipulation using Python but I was eventually able to plot the two data fields against oneanother in a scatterplot 
-</p>
+
 
   
   <!---Fith Chart -->
@@ -174,9 +172,12 @@
     var myChart6 = "Chess_Rankings.json"; vegaEmbed('#Chart6', myChart6);
     </script></div>
 
-
+<p>The chart uses a Scrapper to remove data from the Chess Championship Elo Rankings Website which I have then cleaned and 
+  processed into a TIDY format which is more feasible to use in data visualisations. Achieving the TIDY form took alot of
+  manipulation using Python but I was eventually able to plot the two data fields against oneanother in a scatterplot 
+</p>
 <p>This was a great site to use as it offered a well structured and digestable table form which would be perfect for Scrapping
-  data from!
+  and extracting data from!
 </p>
 <p> The colab notebook can be found <a href="https://colab.research.google.com/drive/1a30E_oXX50LwyKWOTTpFyAdXpY2kjt8C?usp=sharing">here</a></p>
 
@@ -269,7 +270,9 @@
 <p class="bodyText"><span style="color: rgb(49, 6, 40); font-weight: 700;font-size:25px;">Creating Maps</p>
   <h3>Week 6</h3>
 
-  <h3>Here I have produced two maps  which show London Boroughs and a break down Crime Counts statistics from 2021, which are all distinguished through colour-coding.
+  <h3>Here I have produced two maps, with one being a basic models of boroughs in London. While the other showcases
+    a Chloropleth Map which breaks down Crime Counts amoung neighbouring boroughs in 2021, which are all distinguished by their
+    respective colour coding.
   </h3>
 
   <!-- Fifthteenth Chart -->
@@ -304,8 +307,8 @@
   
   
      <!-- Fifthteenth Chart -->
-     <p>This Graph investigates correlation between job vacancies and costs of living/household expenditure to determine if 
-      high costs force people to hunt for new jobs.
+     <p>This Graph shows job vacancies is correlated to the cost of living/household expenditure as people
+      struggle to live theyre always on the hunt for better paid work.
      </p>
   <div class="chart" id="Chart18"><script>
     var myChart18 = "Cost of Living.json"; vegaEmbed('#Chart18', myChart18);

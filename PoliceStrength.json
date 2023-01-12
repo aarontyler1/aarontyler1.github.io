@@ -1,0 +1,82 @@
+
+
+
+
+{
+    "data": {
+      "url": "https://raw.githubusercontent.com/aarontyler1/aarontyler1.github.io/main/Police_Force_Strength.csv"},
+  
+        "transform": [
+    {"calculate": "datum.CPI_Percentage_Change/100", "as": "Percentage",
+    "format":""}
+    ],
+  
+    "height": 200,
+    "width": 300,
+  
+    "background": null,
+    "config": {
+        "view": {
+           "stroke": "transparent"
+        }
+      },
+
+    "title": {
+        "text": "The Regression of Police Officer Numbers on Crime Rates",
+        "subtitle":["Using the data on Police officer numbers within the Metropoliton we compared it with total","criminal offences in london over a 9 year span to test if any causality exists.", "Sourced: UK Crime Stats, Data.Gov.Uk"],
+        "subtitleFontStyle":"italic",
+        "subtitleFontSize":10,
+        "anchor": "start",
+        "color": "black"
+      },
+  
+    "layer": [
+      {
+        
+        "mark": {
+          "type": "point",
+          "filled": true
+        },
+        "encoding": {
+          "x": {
+            "field": "Police Officer Strength",
+            "type": "quantitative",
+                "scale":{"domain" : [28000,35000]}
+          },
+          "y": {
+            "field": "Total Offences",
+            "type": "quantitative",
+            "scale":{"domain" : [60000,120000]}
+          }
+        }
+        
+      },
+      
+      {
+        "mark": {
+          "type": "line",
+          "color": "firebrick"
+        },
+        "transform": [
+          {
+            "regression": "Total Offences",
+            "on": "Police Officer Strength"
+          }
+        ],
+  
+        "encoding": {
+          "x": {
+            "field": "Police Officer Strength",
+            "type": "quantitative",
+            "title":"Police Officer Numbers",
+            "format":"%"
+          },
+          "y": {
+            "field": "Total Offences",
+            "type": "quantitative"
+          }
+        }
+      }
+      
+    ]
+  }

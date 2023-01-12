@@ -1,6 +1,6 @@
 {"title": {
     "text": "London Knife Crime & Population Density",
-    "subtitle":["Regressing the Population Density on the Knife crime seen", "in London Boroughs."],
+    "subtitle":["Regressing the Population Density on the Knife crime seen", "in London Boroughs.","Source : Finder, London Datastore"],
     "subtitleFontStyle":"italic",
     "subtitleFontSize":10,
     "anchor": "start",
@@ -10,7 +10,7 @@
     "url": "https://raw.githubusercontent.com/aarontyler1/aarontyler1.github.io/main/PopDensity%20and%20Knife%20Crime.csv"
   },
    
-  "height": 300,
+  "height": 335,
   "width": 300,
 
   "layer": [
@@ -31,8 +31,8 @@
 
 
           "tooltip":[
-        {"field":"Borough", "type": "ordinal", "title":"Country"},
-        {"field":"Knife Crime 2021", "type": "quantitative", "title":"Knife Crime"}
+        {"field":"Borough", "type": "ordinal", "title":"Borough"},
+        {"field":"Knife Crime 2021", "type": "quantitative", "title":["Knife Offences"]}
       ]
       }
     },

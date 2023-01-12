@@ -1,49 +1,59 @@
-Country / Area,"Police Officers per 100,000", Index
-Albania,371.4
-Andorra,304.0
-Armenia,456.0
-Austria,351.1
-Azerbaijan,463.0
-Belarus,331.0
-Belgium,345.1
-Bosnia and Herzegovina,438.0
-Bulgaria,412.8
-Croatia,499.3
-Cyprus,556.5
-Czechia,376.9
-Denmark,192.6
-England,212
-Estonia,300.9
-Finland,134.1
-France,322.2
-Germany,298.2
-Greece,509.0 
-Hungary,391.3 
-Iceland,177.5 
-Ireland,293.0
-Italy,406.2
-Kosovo (Â²),485.5
-Latvia,422.7
-Liechtenstein,321.0
-Lithuania,286.8
-Luxembourg,324.9
-Malta,459.7
-Moldova,369.0
-Montenegro,702.2
-Netherlands,291.9
-North Macedonia,564.0
-Northern Ireland,362
-Norway,189
-Poland,259.4
-Portugal,445.1
-Romania,256.7
-Russia,516
-Scotland,318
-Serbia,636.0
-Slovakia,398.0 
-Slovenia,343.7 
-Spain,366.6 
-Sweden,200.1 
-Switzerland,217.0
-Turkey,527.1 
-Wales,228.0 
+Country / Area,"Police Officers per 100,000",,,
+Albania,371.4 ,,,
+Andorra,304.0 ,,,
+Armenia,456.0 ,,,
+Austria,351.1 ,,,
+Azerbaijan,463.0 ,,,
+Belarus,331.0 ,,,
+Belgium,345.1 ,,,
+Bosnia and Herzegovina,438.0 ,,,
+Bulgaria,412.8 ,,,
+Croatia,499.3 ,,,
+Cyprus,556.5 ,,,
+Czechia,376.9 ,,,
+Denmark,192.6 ,,,
+England,212,,,
+Estonia,300.9 ,,,
+Finland,134.1 ,,,
+France,322.2 ,,,
+Germany,298.2 ,,,
+Greece,509.0 ,,,
+Hungary,391.3 ,,,
+Iceland,177.5 ,,,
+Ireland,293.0 ,,,
+Italy,406.2 ,,,
+Kosovo (²),485.5 ,,,
+Latvia,422.7 ,,,
+Liechtenstein,321.0 ,,,
+Lithuania,286.8 ,,,
+Luxembourg,324.9 ,,,
+Malta,459.7 ,,,
+Moldova,369.0 ,,,
+Montenegro,702.2 ,,,
+Netherlands,291.9 ,,,
+North Macedonia,564.0 ,,,
+Northern Ireland,362,,,
+Norway,189,,,
+Poland,259.4 ,,,
+Portugal,445.1 ,,,
+Romania,256.7 ,,,
+Russia,516,,,
+Scotland,318,,,
+Serbia,636.0 ,,,
+Slovakia,398.0 ,,,
+Slovenia,343.7 ,,,
+Spain,366.6 ,,,
+Sweden,200.1 ,,,
+Switzerland,217.0 ,,,
+Turkey,527.1 ,,,
+Wales,228.0 ,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
